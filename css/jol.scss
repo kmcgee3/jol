@@ -1,0 +1,39 @@
+@import "compass/css3";
+html {
+  min-width: 320px;
+  width: 100%;
+  height: 60%;
+  padding: 0;
+  margin: 0;
+}
+body {
+  @extend html;
+  @include transition(background-color 1s);
+  @include animation(background 4s 4s infinite alternate);
+  position: relative;
+}
+//animation
+svg {
+  @include transition(all 1s);
+  @include animation(dance 1.5s infinite alternate);
+  margin-left: 0;
+ 
+  &:hover {
+    @include transform(scale(0.6));
+    margin-right: 100px;
+  }
+}
+//jack o lantern face
+#mouth {
+  @extend %pumpkin-face;
+  @include transform(scale(2, 2) translate(-150px,-125px));
+}
+#nose {
+  @extend %pumpkin-face;
+  @include transform(translate(0, -15px));
+}
+#eyes path {
+  @extend %pumpkin-face;
+  @include transform(scale(1.2, 2.2) translate(-50px, -140px));
+}
+  }

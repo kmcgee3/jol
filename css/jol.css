@@ -1,0 +1,149 @@
+html, body {
+  min-width: 320px;
+  width: 100%;
+  height: 80%;
+  padding: 0;
+  margin: 0;
+  font-family: cursive;
+  font-size: 30px;
+}
+body {
+  
+  -moz-transition: background-color 1s;
+  -o-transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+  -moz-animation: background 4s 4s infinite alternate;
+  -webkit-animation: background 4s 4s infinite alternate;
+  animation: background 4s 4s infinite alternate;
+  background-color: #33001a;
+  position: center;
+
+}
+/*Styling for jokes*/
+#jokes{
+ position:absolute; 
+ left: 5%; 
+ padding: 12px; 
+ display:flex;
+ align-content: center;
+ align-items: center;
+ justify-content:center; 
+ font-family: cursive;
+ text-decoration-color: orangered;
+}
+@-moz-keyframes background {
+  100% {
+    background-color: #33001a;
+  }
+}
+@-webkit-keyframes background {
+  100% {
+    background-color: #33001a;
+  }
+}
+@keyframes background {
+  100% {
+    background-color: #33001a;
+  }
+}
+/*dancing*/
+svg {
+	position: center;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -moz-animation: dance 1.5s infinite alternate;
+  -webkit-animation: dance 1.5s infinite alternate;
+  animation: dance 1.5s infinite alternate;
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+svg:hover {
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -webkit-transform: scale(0.6);
+  transform: scale(0.6);
+}
+/*animation*/
+@-moz-keyframes dance {
+  100% {
+    margin-right: 150px;
+  }
+}
+@-webkit-keyframes dance {
+  100% {
+    margin-right: 150px;
+  }
+}
+@keyframes dance {
+  100% {
+    margin-right: 150px;
+  }
+}
+#head {
+  fill: #ff0000;
+}
+/*features*/
+#mouth, #nose, #eyes path {
+  fill: #0000;
+  -moz-animation: pumpkin 1.5s infinite alternate, fill-color 4s 4s infinite alternate;
+  -webkit-animation: pumpkin 1.5s infinite alternate, fill-color 4s 4s infinite alternate;
+  animation: pumpkin 1.5s infinite alternate, fill-color 4s 4s infinite alternate;
+}
+#mouth {
+  -moz-transform: scale(2, 2) translate(-150px, -125px);
+  -ms-transform: scale(2, 2) translate(-150px, -125px);
+  -webkit-transform: scale(2, 2) translate(-150px, -125px);
+  transform: scale(2, 2) translate(-150px, -125px);
+}
+#nose {
+  -moz-transform: translate(0, -15px);
+  -ms-transform: translate(0, -15px);
+  -webkit-transform: translate(0, -15px);
+  transform: translate(0, -15px);
+}
+#eyes path {
+  -moz-transform: scale(1.2, 2.2) translate(-50px, -140px);
+  -ms-transform: scale(1.2, 2.2) translate(-50px, -140px);
+  -webkit-transform: scale(1.2, 2.2) translate(-50px, -140px);
+  transform: scale(1.2, 2.2) translate(-50px, -140px);	
+}
+/*feature colors*/
+@-moz-keyframes fill-color {
+  100% {
+    fill: #0000;
+  }
+}
+@-webkit-keyframes fill-color {
+  100% {
+    fill: #0000;
+  }
+}
+@keyframes fill-color {
+  100% {
+    fill: #0000;
+  }
+}
+/*feature animation*/
+@-moz-keyframes pumpkin {
+  100% {
+    -moz-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+}
+@-webkit-keyframes pumpkin {
+  100% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+}
+@keyframes pumpkin {
+ 80% {
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+}
